@@ -10,19 +10,21 @@ import type { MetaFunction } from "remix";
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "高木のブログ",
   viewport: "width=device-width,initial-scale=1",
 });
 
 export default function App() {
   return (
-    <html lang="en">
+    <html lang="ja">
       <head>
         <Meta />
         <Links />
       </head>
       <body>
-        <Outlet />
+        <div style={{margin: `auto`, maxWidth: `760px`}}>
+          <Outlet />
+        </div>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
