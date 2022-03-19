@@ -17,7 +17,7 @@ export default function IndexSlug() {
     <>
       <h2>高木のブログ</h2>
       <h1 style={{ marginBottom: 0, borderBottom: `1px solid hsla(0, 0%, 0%, 0.2)` }}>{post.title}</h1>
-      <main dangerouslySetInnerHTML={{ __html: post.html }} />
+      <main dangerouslySetInnerHTML={{ __html: post.text }} />
       <Link to="/">記事一覧</Link>
     </>
   );

@@ -16,8 +16,8 @@ export default function Index() {
       <main>
         <ul>
           {posts.map((post) => (
-            <li key={post.slug}>
-              <Link to={post.slug}>{post.title}</Link>
+            <li key={post.id}>
+              <Link to={post.id}>{post.title}</Link>
             </li>
           ))}
         </ul>
